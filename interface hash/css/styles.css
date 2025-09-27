@@ -1,0 +1,489 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.back-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 0;
+}body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f4f8; /* Нежный светлый фон */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.form-container {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container input {
+    padding: 14px;
+    font-size: 18px;
+    margin: 10px;
+    border: 2px solid #0077ff;
+    border-radius: 8px;
+    width: 80%;
+    transition: border-color 0.3s ease;
+}
+
+.form-container input:focus {
+    border-color: #0077ff;
+}
+
+.form-container button {
+    background: #0077ff;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-container button:hover {
+    background: #0066cc;
+}
+
+.form-container .error {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    margin: 15px;
+}
+
+a {
+    display: block;
+    background: #66b2ff;
+    color: white;
+    padding: 18px 30px;
+    text-decoration: none;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    min-width: 250px;
+    margin: 10px;
+}
+
+a:hover {
+    background: #3399ff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+a:active {
+    background: #0077ff;
+    transform: translateY(0);
+}
+
+.console-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    background: #0077ff;
+    padding: 5px;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.console-button img {
+    width: 52px;
+    height: 52px;
+    border-radius: 8px; /* Закругление углов изображения */
+}
+
+.console-container {
+    display: none;
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.console-output {
+    font-family: monospace;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Темная тема */
+html[data-theme="dark"] {
+    background-color: #222;
+    color: #eee;
+}
+
+html[data-theme="dark"] .container {
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+html[data-theme="dark"] .form-container input {
+    border-color: #3399ff;
+}
+
+html[data-theme="dark"] .form-container input:focus {
+    border-color: #3399ff;
+}
+
+html[data-theme="dark"] .form-container button {
+    background: #3399ff;
+}
+
+html[data-theme="dark"] .form-container button:hover {
+    background: #0077ff;
+}
+
+html[data-theme="dark"] a {
+    background: #0077ff;
+}
+
+html[data-theme="dark"] a:hover {
+    background: #0066cc;
+}
+
+html[data-theme="dark"] a:active {
+    background: #0056b3;
+}
+
+html[data-theme="dark"] .console-button {
+    background: #3399ff;
+}
+
+html[data-theme="dark"] .console-container {
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+html[data-theme="dark"] .console-output {
+    background-color: #555;
+    color: #ddd;
+}
+
+.theme-switch-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.theme-switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ccc;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.theme-switch-icon {
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+.back-button {
+    width: 30px;
+    height: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+    width: 30px;
+    height: 20px;
+    background: linear-gradient(135deg, #0056b3, #004092);
+    transform: scale(1.05);
+}
+
+.delete-button {
+    background-color: #007bff; /* Синий цвет фона */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Скругленные углы */
+    font-weight: bold;
+}
+
+.delete-button:hover {
+    background-color: #0056b3; /* Тёмно-синий при наведении */
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+
+.theme-button {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 24px;
+    padding: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.console-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    background: #0077ff;
+    padding: 5px;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.console-button img {
+    width: 52px;
+    height: 52px;
+    border-radius: 8px; /* Закругление углов изображения */
+}
+
+.console-container {
+    display: none;
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.console-output {
+    font-family: monospace;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.form-container {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container input {
+    padding: 14px;
+    font-size: 18px;
+    margin: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    width: 80%;
+    transition: border-color 0.3s ease;
+}
+
+.form-container input:focus {
+    border-color: #0077ff;
+}
+
+.form-container button {
+    background: #0077ff;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-container button:hover {
+    background: #0077ff;
+}
+
+.form-container .error {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для таблицы, возвращаемой console.php */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    min-width: 400px;
+    border-radius: 8px;
+    overflow: hidden; /* Чтобы скругление было видно */
+}
+
+/* Шапка таблицы */
+.styled-table thead tr {
+    background-color: #0077ff;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Ячейки заголовка и тела */
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Чередование цветов строк (зебра) */
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+/* Последняя строка */
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #0077ff;
+}
+
+/* Пример класса для активной строки */
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #0077ff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
